@@ -3,7 +3,7 @@ import yfinance as yf
 from sqlalchemy import create_engine
 from dotenv import load_dotenv
 import os
-
+ 
 load_dotenv()
 
 DB_HOST = os.getenv('DB_HOSTNAME')
@@ -41,7 +41,7 @@ def buscar_todos_dados_commodities(commodities = commodities):
     return pd.concat(todos_dados)          
 
 
-def salvar_postgres(df, schema = 'public'):
+def salvar_postgres(df, schema = 'public'): 
      df.to_sql('commodities', engine, if_exists = 'replace', index = True, index_label = 'Date', schema = schema)
 
 if __name__ == '__main__':

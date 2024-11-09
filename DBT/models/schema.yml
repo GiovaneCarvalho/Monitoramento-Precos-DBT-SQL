@@ -14,14 +14,14 @@ sources:
           - name: ticker
             description: "Símbolo da commodity"
 
-      # - name: movimentacao_commodities
-      #   description: "Tabela seed"
-      #   columns:
-      #     - name: date
-      #       description: "Data da transação"
-      #     - name: symbol
-      #       description: "Símbolo da commodity"
-      #     - name: action
-      #       description: "Tipo de transação (buy/sell)"
-      #     - name: quantity
-      #       description: "Quantidade transacionada"
+      - name: movimentacao_commodities
+        description: "Tabela seed"
+        columns:
+          - name: date
+            description: "Data da transação"
+          - name: symbol
+            description: "Símbolo da commodity"
+          - name: action
+            description: "Tipo de transação (buy/sell)"
+          - name: quantity
+            description: "Quantidade transacionada"
